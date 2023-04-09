@@ -14,6 +14,9 @@
 
 /*------NavBar-----*/
 
+body {
+    padding-top: 6rem;
+}
 
 .navbar {
     display: flex;
@@ -22,6 +25,10 @@
     justify-content: flex-start;
     align-items: center;
     padding: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .navbar h3 {
@@ -39,10 +46,6 @@
     font-size: 1rem;
     line-height: 1.75rem;
 }
-
-
-
-
 
 /*------Header-----*/
 
@@ -120,7 +123,7 @@
     transition: 1s;
 }
 
-.buttonSectionOne:hover{
+.buttonSectionOne:hover {
     background-color: var(--brand-color-two);
     color: var(--fifth-color);
 }
@@ -186,17 +189,17 @@
 /*------Posts-----*/
 
 
-.posts{
+.posts {
     padding: 5rem;
     width: 60%;
 }
 
-.sectionPosts{
+.sectionPosts {
     display: flex;
     margin: 0;
 }
 
-.postDivMain{
+.postDivMain {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -204,7 +207,7 @@
     width: 100%;
 }
 
-.divUserPost{
+.divUserPost {
     display: flex;
     gap: 1rem;
 }
@@ -226,16 +229,16 @@
 
 .divTwoPost {
     margin-top: 1rem;
-  }
+}
 
-.divThreePost{
+.divThreePost {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
     gap: 1rem;
 }
 
-.divThreePost h1{
+.divThreePost h1 {
     text-align: justify;
     margin-right: 0;
     font-size: 1.75rem;
@@ -252,7 +255,7 @@
     font-weight: 400;
 }
 
-.imgPost{
+.imgPost {
     width: 4rem;
     height: 4rem;
     margin-right: 1rem;
@@ -260,7 +263,7 @@
     margin-bottom: 1rem;
 }
 
-.buttonPost{
+.buttonPost {
     background-color: var(--first-color);
     color: var(--eighth-color);
     padding: 1rem 1rem;
@@ -269,12 +272,12 @@
     white-space: nowrap;
 }
 
-.divFourPost{
+.divFourPost {
     display: flex;
 }
 
 
-.modal{
+.modal {
     display: block;
     position: fixed;
     top: 0;
@@ -294,16 +297,16 @@
     width: 5rem;
     height: 2rem;
     border-radius: 3px;
-    float: right; 
-    margin: 1rem 1rem 0rem 0rem; 
+    float: right;
+    margin: 1rem 1rem 0rem 0rem;
 }
 
-.modalUser{
+.modalUser {
     display: flex;
     align-items: center;
 }
 
-.modalUser img{
+.modalUser img {
     width: 4rem;
     height: 4rem;
     margin-right: 1rem;
@@ -311,7 +314,7 @@
     margin-bottom: 1rem;
 }
 
-.modalUser h3{
+.modalUser h3 {
     margin-right: 0;
     font-size: 1.1rem;
     line-height: 1.3rem;
@@ -319,7 +322,7 @@
     font-weight: bold;
 }
 
-.divThreeModal h1{
+.divThreeModal h1 {
     text-align: justify;
     margin-right: 0;
     font-size: 1.75rem;
@@ -374,7 +377,7 @@
         text-align: center;
     }
 
-    .sectionOneNewInformation{
+    .sectionOneNewInformation {
         width: 100%;
     }
 
@@ -412,7 +415,7 @@
         flex-direction: column;
     }
 
-    .userSection{
+    .userSection {
         display: flex;
         white-space: nowrap;
 
@@ -429,17 +432,17 @@
 
     /*---------------------*/
 
-    .posts{
+    .posts {
         padding: 0;
         width: 100%;
     }
 
-    .sectionPosts{
+    .sectionPosts {
         display: flex;
         margin: 0;
     }
 
-    .postDivMain{
+    .postDivMain {
         display: flex;
         flex-direction: column;
         margin: 0;
@@ -447,7 +450,7 @@
         width: 100%;
     }
 
-    .divUserPost{
+    .divUserPost {
         display: flex;
         gap: 1rem;
     }
@@ -469,16 +472,16 @@
 
     .divTwoPost {
         margin-top: 1rem;
-      }
+    }
 
-    .divThreePost{
+    .divThreePost {
         display: flex;
         flex-direction: column;
         margin-top: 1rem;
         gap: 1rem;
     }
 
-    .divThreePost h1{
+    .divThreePost h1 {
         text-align: justify;
         margin-right: 0;
         font-size: 1.5rem;
@@ -490,7 +493,7 @@
         text-align: justify;
     }
 
-    .imgPost{
+    .imgPost {
         width: 4rem;
         height: 4rem;
         margin-right: 1rem;
@@ -498,7 +501,7 @@
         margin-bottom: 1rem;
     }
 
-    .buttonPost{
+    .buttonPost {
         background-color: var(--first-color);
         color: var(--eighth-color);
         padding: 1rem 1rem;
@@ -507,38 +510,39 @@
         white-space: nowrap;
     }
 
-    .divFourPost{
+    .divFourPost {
         display: flex;
     }
+
     /*-------------------------*/
 
-    .modal{
+    .modal {
         margin: 5rem 1rem;
         padding: 1rem;
     }
-    
+
     .closeButton {
         margin: 1rem 0 0 0;
     }
-    
-    .modalUser img{
+
+    .modalUser img {
         width: 3rem;
         height: 3rem;
     }
-    
-    .modalUser h3{
+
+    .modalUser h3 {
         font-size: 1rem;
         line-height: 1.2rem;
     }
-    
-    .divThreeModal h1{
+
+    .divThreeModal h1 {
         font-size: 1.5rem;
         line-height: 2rem;
     }
-    
+
     .divThreeModal p {
         font-size: 0.9rem;
         line-height: 1.2rem;
     }
-    
+
 }
