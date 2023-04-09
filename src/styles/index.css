@@ -1,0 +1,544 @@
+:root {
+    --first-color: #0A0C0D;
+    --second-color: #212529;
+    --third-color: #495057;
+    --fourth-color: #868E96;
+    --fifth-color: #DEE2E6;
+    --sixth-color: #F8F9FA;
+    --seventh-color: rgba(33, 37, 41, 0.5);
+    --eighth-color: #FFFFFF;
+    --brand-color-one: #4263EB;
+    --brand-color-two: #364FC7;
+}
+
+
+/*------NavBar-----*/
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--second-color);
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+}
+
+.navbar h3 {
+    margin-right: auto;
+    color: var(--fifth-color);
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.navbar p {
+    margin-left: auto;
+    color: var(--fifth-color);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+
+
+
+
+/*------Header-----*/
+
+.header {
+    display: flex;
+}
+
+.sectionOne {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0;
+    align-items: flex-start;
+}
+
+.sectionUser {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sectionUser h3 {
+    color: var(--first-color);
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.sectionUser p {
+    color: var(--second-color);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+.imgSectionOne {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+}
+
+.sectionOneNewInformation {
+    margin-top: 5rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputSectionOne {
+    width: 40rem;
+    height: 3rem;
+    border: solid 1px;
+    border-color: var(--fourth-color);
+    border-radius: 3px;
+    color: var(--second-color);
+}
+
+.textareaSectionOne {
+    width: 40rem;
+    height: 10rem;
+    border: solid 1px;
+    border-color: var(--fourth-color);
+    border-radius: 3px;
+    color: var(--second-color);
+}
+
+.buttonSectionOne {
+    background-color: var(--brand-color-one);
+    color: var(--sixth-color);
+    width: 5rem;
+    height: 2rem;
+    border-radius: 3px;
+    margin-left: auto;
+    transition: 1s;
+}
+
+.buttonSectionOne:hover{
+    background-color: var(--brand-color-two);
+    color: var(--fifth-color);
+}
+
+
+/*------Sugestoes-----*/
+
+.sugestions {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    max-width: 40%;
+    margin: 0;
+    align-items: flex-end;
+}
+
+.sugestions h2 {
+    color: var(--first-color);
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.sugestionsUsers {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sugestionsUsers h3 {
+    color: var(--first-color);
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.sugestionsUsers p {
+    color: var(--second-color);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+.buttonSugestions {
+    background-color: var(--brand-color-one);
+    color: var(--sixth-color);
+    width: 5rem;
+    height: 2rem;
+    border-radius: 3px;
+    margin-left: 3rem;
+}
+
+.buttonSugestionsFollowing {
+    background-color: var(--fifth-color);
+    color: var(--first-color);
+    width: 5rem;
+    height: 2rem;
+    border-radius: 3px;
+    margin-left: 3rem;
+}
+
+/*------Posts-----*/
+
+
+.posts{
+    padding: 5rem;
+    width: 60%;
+}
+
+.sectionPosts{
+    display: flex;
+    margin: 0;
+}
+
+.postDivMain{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+.divUserPost{
+    display: flex;
+    gap: 1rem;
+}
+
+.divUserPost h3 {
+    margin-right: 0;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: var(--first-color);
+    font-weight: bold;
+}
+
+.divUserPost p {
+    margin-left: 0;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: var(--fourth-color);
+}
+
+.divTwoPost {
+    margin-top: 1rem;
+  }
+
+.divThreePost{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.divThreePost h1{
+    text-align: justify;
+    margin-right: 0;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    color: var(--first-color);
+    font-weight: 700 bold;
+}
+
+.divThreePost p {
+    color: var(--fourth-color);
+    text-align: justify;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.imgPost{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    margin-right: 0;
+    margin-bottom: 1rem;
+}
+
+.buttonPost{
+    background-color: var(--first-color);
+    color: var(--eighth-color);
+    padding: 1rem 1rem;
+    border-radius: 4px;
+    margin: 1rem 1rem 0rem 0rem;
+    white-space: nowrap;
+}
+
+.divFourPost{
+    display: flex;
+}
+
+
+.modal{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 10rem 35rem;
+    z-index: 9999;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--eighth-color);
+}
+
+.closeButton {
+    background-color: var(--brand-color-one);
+    color: var(--sixth-color);
+    width: 5rem;
+    height: 2rem;
+    border-radius: 3px;
+    float: right; 
+    margin: 1rem 1rem 0rem 0rem; 
+}
+
+.modalUser{
+    display: flex;
+    align-items: center;
+}
+
+.modalUser img{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    margin-right: 0;
+    margin-bottom: 1rem;
+}
+
+.modalUser h3{
+    margin-right: 0;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: var(--first-color);
+    font-weight: bold;
+}
+
+.divThreeModal h1{
+    text-align: justify;
+    margin-right: 0;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    color: var(--first-color);
+    font-weight: 700 bold;
+}
+
+.divThreeModal p {
+    color: var(--fourth-color);
+    text-align: justify;
+}
+
+
+
+/*----Inicio do Mobile----*/
+
+
+
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem 1rem 1rem 1rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .navbar h3 {
+        margin-right: 0;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+    }
+
+    .navbar p {
+        margin-left: 0;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    .header {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sectionOne {
+        padding: 2rem 1rem;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sectionOneNewInformation{
+        width: 100%;
+    }
+
+    .sectionUser {
+        gap: 1rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    .imgSectionOne {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .inputSectionOne {
+        width: 100%;
+    }
+
+    .textareaSectionOne {
+        width: 100%;
+    }
+
+    .buttonSectionOne {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+
+    .sugestions {
+        overflow: auto;
+        max-width: 100%;
+        padding: 2rem;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .userSection{
+        display: flex;
+        white-space: nowrap;
+
+    }
+
+    .sugestionsUsers {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+
+    /*---------------------*/
+
+    .posts{
+        padding: 0;
+        width: 100%;
+    }
+
+    .sectionPosts{
+        display: flex;
+        margin: 0;
+    }
+
+    .postDivMain{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 2rem 1rem;
+        width: 100%;
+    }
+
+    .divUserPost{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .divUserPost h3 {
+        margin-right: 0;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        color: var(--first-color);
+        font-weight: bold;
+    }
+
+    .divUserPost p {
+        margin-left: 0;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        color: var(--fourth-color);
+    }
+
+    .divTwoPost {
+        margin-top: 1rem;
+      }
+
+    .divThreePost{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .divThreePost h1{
+        text-align: justify;
+        margin-right: 0;
+        font-size: 1.5rem;
+        line-height: 1.3rem;
+    }
+
+    .divThreePost p {
+        color: var(--fourth-color);
+        text-align: justify;
+    }
+
+    .imgPost{
+        width: 4rem;
+        height: 4rem;
+        margin-right: 1rem;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .buttonPost{
+        background-color: var(--first-color);
+        color: var(--eighth-color);
+        padding: 1rem 1rem;
+        border-radius: 4px;
+        margin: 1rem 1rem 0rem 0rem;
+        white-space: nowrap;
+    }
+
+    .divFourPost{
+        display: flex;
+    }
+    /*-------------------------*/
+
+    .modal{
+        margin: 5rem 1rem;
+        padding: 1rem;
+    }
+    
+    .closeButton {
+        margin: 1rem 0 0 0;
+    }
+    
+    .modalUser img{
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .modalUser h3{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    
+    .divThreeModal h1{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    
+    .divThreeModal p {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+    
+}
