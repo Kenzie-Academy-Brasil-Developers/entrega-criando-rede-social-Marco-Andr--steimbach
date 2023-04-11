@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+:root {
+    --first-color: #0A0C0D;
+    --second-color: #212529;
+    --third-color: #495057;
+    --fourth-color: #868E96;
+    --fifth-color: #DEE2E6;
+    --sixth-color: #F8F9FA;
+    --seventh-color: rgba(33, 37, 41, 0.5);
+    --eighth-color: #FFFFFF;
+    --brand-color-one: #4263EB;
+    --brand-color-two: #364FC7;
+    --font-family-page: 'Inter', sans-serif;
+    --font-family-modal: 'Nunito', sans-serif;
+}

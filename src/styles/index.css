@@ -1,23 +1,8 @@
-:root {
-    --first-color: #0A0C0D;
-    --second-color: #212529;
-    --third-color: #495057;
-    --fourth-color: #868E96;
-    --fifth-color: #DEE2E6;
-    --sixth-color: #F8F9FA;
-    --seventh-color: rgba(33, 37, 41, 0.5);
-    --eighth-color: #FFFFFF;
-    --brand-color-one: #4263EB;
-    --brand-color-two: #364FC7;
-    --font-family: 'Inter', sans-serif;
-}
-
-
 /*------NavBar-----*/
 
 body {
     padding-top: 6rem;
-    font-family: var(--font-family);
+    font-family: var(--font-family-page);
 }
 
 .navbar {
@@ -178,17 +163,18 @@ body {
 }
 
 .suggestion__list--button {
-    background-color: var(--brand-color-one);
-    color: var(--sixth-color);
+    background-color: var(--fifth-color);
+    color: var(--first-color);
     width: 5rem;
     height: 2rem;
     border-radius: 3px;
     margin-left: 3rem;
+
 }
 
 .suggestion__list__button--Following {
-    background-color: var(--fifth-color);
-    color: var(--first-color);
+    background-color: var(--brand-color-one);
+    color: var(--sixth-color);
     width: 5rem;
     height: 2rem;
     border-radius: 3px;
@@ -280,7 +266,7 @@ body {
     white-space: nowrap;
 }
 
-.sectionPosts__div__button--buttonLike{
+.sectionPosts__div__button--buttonLike {
     margin-top: 1rem;
     background-color: transparent;
     display: flex;
@@ -294,20 +280,25 @@ body {
 
 
 .modal {
+    font-family: var(--font-family-modal);
+    border: none;
     display: block;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    margin: 10rem 35rem;
+    margin: 15rem 45rem;
     z-index: 9999;
-    border: none;
     border-radius: 5px;
     background-color: var(--eighth-color);
 }
 
 .modal__closeButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
     background-color: var(--fourth-color);
     color: var(--sixth-color);
     width: 2rem;
@@ -319,7 +310,6 @@ body {
 .modal__User {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .modal__User--img {
@@ -355,9 +345,6 @@ body {
 
 
 /*----Inicio do Mobile----*/
-
-
-
 
 @media screen and (max-width: 600px) {
     .navbar {
@@ -536,7 +523,7 @@ body {
     /*-------------------------*/
 
     .modal {
-        margin: 5rem 1rem;
+        margin: 6rem 0.2rem;
         padding: 1rem;
     }
 
