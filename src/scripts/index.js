@@ -8,16 +8,18 @@ function createSugestions(object) {
     for (let i = 0; i < object.length; i++) {
         let obj = object[i]
 
-        let divMain = document.createElement("div")
+        let divMain = document.createElement("li")
         let img = document.createElement("img")
-        let divTwo = document.createElement("div")
+        let divUser = document.createElement("div")
         let name = document.createElement("h3")
         let qualification = document.createElement("p")
         let button = document.createElement("button")
 
-        divMain.classList.add(`sugestionsUsers`)
-        img.classList.add(`imgSectionOne`)
-        button.classList.add(`buttonSugestions`)
+        divMain.classList.add(`suggestion__list`)
+        name.classList.add(`suggestion__list--title`)
+        qualification.classList.add(`suggestion__list--stack`)
+        img.classList.add(`suggestion__list--img`)
+        button.classList.add(`suggestion__list--button`)
 
         img.src = obj.img
         name.innerHTML = obj.user
@@ -25,26 +27,26 @@ function createSugestions(object) {
         button.innerHTML = `Seguir`
 
         button.addEventListener("click", function () {
-            
-            if (button.classList.contains("buttonSugestions")) {
 
-                button.classList.remove("buttonSugestions")
-                button.classList.add("buttonSugestionsFollowing")
+            if (button.classList.contains("suggestion__list--button")) {
+
+                button.classList.remove("suggestion__list--button")
+                button.classList.add("suggestion__list__button--Following")
                 button.innerHTML = "Seguindo"
 
-            } else if (button.classList.contains("buttonSugestionsFollowing")) {
+            } else if (button.classList.contains("suggestion__list__button--Following")) {
 
-                button.classList.remove("buttonSugestionsFollowing")
-                button.classList.add("buttonSugestions")
+                button.classList.remove("suggestion__list__button--Following")
+                button.classList.add("suggestion__list--button")
                 button.innerHTML = "Seguir"
 
             }
         })
 
         divMain.appendChild(img)
-        divMain.appendChild(divTwo)
-        divTwo.appendChild(name)
-        divTwo.appendChild(qualification)
+        divMain.appendChild(divUser)
+        divUser.appendChild(name)
+        divUser.appendChild(qualification)
         divMain.appendChild(button)
 
         userList.appendChild(divMain)
@@ -55,21 +57,25 @@ function createPosts(object) {
     for (let i = 0; i < object.length; i++) {
         let obj = object[i]
 
-        let divMain = document.createElement("div")
+        let divMain = document.createElement("li")
         let divUser = document.createElement("div")
         let img = document.createElement("img")
-        let divTwo = document.createElement("div")
+        let divUserName = document.createElement("div")
         let name = document.createElement("h3")
         let qualification = document.createElement("p")
-        let divThree = document.createElement("div")
+        let divPost = document.createElement("div")
         let tittle = document.createElement("h1")
         let text = document.createElement("p")
-        let divFour = document.createElement("div")
+        let divPostButtons = document.createElement("div")
         let buttonOpen = document.createElement("button")
         let buttonLike = document.createElement("button")
 
+        let imgUnLike = document.createElement("img")
         let imgLike = document.createElement("img")
-        imgLike.src = `Vector.png`
+
+        imgLike.src = `./src/assets/img/like.png`
+        console.log(imgLike)
+        imgUnLike.src = `./src/assets/img/Vector.png`
 
         img.src = obj.img
         name.innerHTML = obj.user
@@ -77,16 +83,20 @@ function createPosts(object) {
         tittle.innerHTML = obj.title
         text.innerHTML = obj.text
         buttonOpen.innerHTML = `Abrir Post`
-        buttonLike.innerHTML = imgLike + obj.likes
+        buttonLike.innerHTML = obj.likes
 
-        img.classList.add("imgPost")
-        divMain.classList.add("postDivMain")
-        divTwo.classList.add("divTwoPost")
-        divUser.classList.add("divUserPost")
-        divThree.classList.add("divThreePost")
-        divFour.classList.add("divFourPost")
-        buttonOpen.classList.add("buttonPost")
-        buttonLike.classList.add("buttonLike")
+        img.classList.add("sectionPosts__userImgPost")
+        divMain.classList.add("sectionPosts__div__main")
+        divUserName.classList.add("sectionPosts__div__UserName")
+        divUser.classList.add("sectionPosts__div__User")
+        name.classList.add("sectionPosts__div__User--name")
+        text.classList.add("sectionPosts__div__User--stack")
+        divPost.classList.add("sectionPosts__div__content")
+        tittle.classList.add("sectionPosts__div__content--title")
+        text.classList.add("sectionPosts__div__content--text")
+        divPostButtons.classList.add("sectionPosts__div__button")
+        buttonOpen.classList.add("sectionPosts__div__button--buttonPost")
+        buttonLike.classList.add("sectionPosts__div__button--buttonLike")
 
 
         buttonOpen.addEventListener("click", function () {
@@ -95,17 +105,17 @@ function createPosts(object) {
             let divMainModal = document.createElement("div")
             let divUserModal = document.createElement("div")
             let imgModal = document.createElement("img")
-            let divTwoModal = document.createElement("div")
+            let divUserNameModal = document.createElement("div")
             let nameModal = document.createElement("h3")
             let qualificationModal = document.createElement("p")
-            let divThreeModal = document.createElement("div")
+            let divPostModal = document.createElement("div")
             let tittleModal = document.createElement("h1")
             let textModal = document.createElement("p")
 
             let closeButton = document.createElement("button")
 
             closeButton.innerHTML = "X"
-            closeButton.classList.add("closeButton")
+            closeButton.classList.add("modal__closeButton")
 
             imgModal.src = obj.img
             nameModal.innerHTML = obj.user
@@ -114,39 +124,43 @@ function createPosts(object) {
             textModal.innerHTML = obj.text
 
             divUserModal.appendChild(imgModal)
-            divUserModal.appendChild(divTwoModal)
+            divUserModal.appendChild(divUserNameModal)
+            divUserModal.appendChild(closeButton)
             divMainModal.appendChild(divUserModal)
-            divTwoModal.appendChild(nameModal)
-            divTwoModal.appendChild(qualificationModal)
-            divMainModal.appendChild(divThreeModal)
-            divThreeModal.appendChild(tittleModal)
-            divThreeModal.appendChild(textModal)
-            divMainModal.appendChild(closeButton)
+            divUserNameModal.appendChild(nameModal)
+            divUserNameModal.appendChild(qualificationModal)
+            divMainModal.appendChild(divPostModal)
+            divPostModal.appendChild(tittleModal)
+            divPostModal.appendChild(textModal)
             modal.appendChild(divMainModal)
 
             document.body.appendChild(modal)
 
             modal.classList.add("modal")
-            divUserModal.classList.add("modalUser")
-            divThreeModal.classList.add("divThreeModal")
+            divUserModal.classList.add("modal__User")
+            imgModal.classList.add("modal__User--img")
+            nameModal.classList.add("modal__User--name")
+            divPostModal.classList.add("modal__post")
+            tittleModal.classList.add("modal__post--tittle")
+            textModal.classList.add("modal__post--text")
 
             closeButton.addEventListener("click", function () {
                 modal.remove()
             })
         })
 
-
         divUser.appendChild(img)
-        divUser.appendChild(divTwo)
-        divTwo.appendChild(name)
-        divTwo.appendChild(qualification)
+        divUser.appendChild(divUserName)
+        divUserName.appendChild(name)
+        divUserName.appendChild(qualification)
         divMain.appendChild(divUser)
-        divMain.appendChild(divThree)
-        divThree.appendChild(tittle)
-        divThree.appendChild(text)
-        divMain.appendChild(divFour)
-        divFour.appendChild(buttonOpen)
-        divFour.appendChild(buttonLike)
+        divMain.appendChild(divPost)
+        divPost.appendChild(tittle)
+        divPost.appendChild(text)
+        divMain.appendChild(divPostButtons)
+        divPostButtons.appendChild(buttonOpen)
+        divPostButtons.appendChild(buttonLike)
+        buttonLike.appendChild(imgUnLike)
 
         postList.appendChild(divMain)
     }

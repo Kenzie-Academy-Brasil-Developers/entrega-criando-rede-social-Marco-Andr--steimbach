@@ -24,8 +24,6 @@
 <body>
   <main>
 
-    <!-- /*------NavBar-----*/ -->
-
     <navbar class="navbar">
       <h3>TechPosters</h3>
       <p>Sair</p>
@@ -33,41 +31,42 @@
 
     <header class="header">
 
-      <!-- /*------SeçãoUm-----*/ -->
-
-      <section class="sectionOne">
-        <div class="sectionUser">
-          <img src="./src/assets/img/user1.svg" class="imgSectionOne">
+      <div class="mainUser__section">
+        <div class="mainUser__profile">
+          <img src="./src/assets/img/user1.svg" class="mainUser__profile__img">
           <div>
-            <h3>Samuel Leão</h3>
-            <p>Front end Engineer</p>
+            <h3 class="mainUser__profile--title">Samuel Leão</h3>
+            <p class="mainUser__profile--stack">Front end Engineer</p>
           </div>
         </div>
-        <div class="sectionOneNewInformation">
-          <input type="text" placeholder="Digitar Titulo do Post" class="inputSectionOne">
-          <textarea placeholder="Digite descrição do post" class="textareaSectionOne"></textarea>
-          <button class="buttonSectionOne">Postar</button>
+        <div class="mainUser__NewInformation">
+          <input type="text" placeholder="Digitar Titulo do Post" class="mainUser__input">
+          <textarea placeholder="Digite descrição do post" class="mainUser__textarea"></textarea>
+          <button class="mainUser__button">Postar</button>
         </div>
-      </section>
+      </div>
 
-      <!-- /*------Sugestão-----*/ -->
-
-      <section class="sugestions">
+      <div class="suggestions">
         <div>
-          <h2>Sugestão para voce seguir</h2>
-          <div id="userSection" class="userSection">
+          <h2 class="suggestions__title">Sugestão para voce seguir</h2>
+          <div>
+            <ul class="user__suggestion__section" id="userSection">
+
+            </ul>
           </div>
         </div>
-      </section>
+      </div>
 
     </header>
 
-    <!-- /*------Posts-----*/ -->
-
     <section class="sectionPosts">
-      <!-- <h1>Posts</h1> -->
-      <div class="posts" id="postSection">
+
+      <div class="sectionPosts__posts" >
+        <ul id="postSection">
+
+        </ul>
       </div>
+
     </section>
 
   </main>
