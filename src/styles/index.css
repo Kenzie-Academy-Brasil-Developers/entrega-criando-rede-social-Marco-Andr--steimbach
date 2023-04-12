@@ -21,17 +21,17 @@ body {
 .navbar h3 {
     margin-right: auto;
     color: var(--fifth-color);
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-weight: var(--Tittle2-font-weight);
+    font-size: var(--Tittle2-font-size);
+    line-height: var(--Tittle2-line-height);
 }
 
 .navbar p {
     margin-left: auto;
     color: var(--fifth-color);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.75rem;
+    font-weight: var(--text1-font-weight);
+    font-size: var(--text1-font-size);
+    line-height: var(--text1-line-height);
 }
 
 /*------Header-----*/
@@ -57,16 +57,16 @@ body {
 
 .mainUser__profile--title {
     color: var(--first-color);
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-weight: var(--Tittle2-font-weight);
+    font-size: var(--Tittle2-font-size);
+    line-height: var(--Tittle2-line-height);
 }
 
 .mainUser__profile--stack {
     color: var(--second-color);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.75rem;
+    font-weight: var(--text1-font-weight);
+    font-size: var(--text1-font-size);
+    line-height: var(--text1-line-height);
 }
 
 .mainUser__profile__img {
@@ -129,9 +129,9 @@ body {
 
 .suggestions__title {
     color: var(--first-color);
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-weight: var(--Tittle2-font-weight);
+    font-size: var(--Tittle2-font-size);
+    line-height: var(--Tittle2-line-height);
 }
 
 .suggestion__list {
@@ -144,16 +144,16 @@ body {
 
 .suggestion__list--title {
     color: var(--first-color);
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-weight: var(--Tittle2-font-weight);
+    font-size: var(--Tittle2-font-size);
+    line-height: var(--Tittle2-line-height);
 }
 
 .suggestion__list--stack {
     color: var(--second-color);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.75rem;
+    font-weight: var(--text1-font-weight);
+    font-size: var(--text1-font-size);
+    line-height: var(--text1-line-height);
 }
 
 .suggestion__list--img {
@@ -208,16 +208,18 @@ body {
 
 .sectionPosts__div__User--name {
     margin-right: 0;
-    font-size: 1.1rem;
-    line-height: 1.3rem;
+    font-size: var(--text2-font-weight);
+    line-height: var(--text2-line-height);
+    font-weight: var(--text2-font-weight);
     color: var(--first-color);
     font-weight: bold;
 }
 
 .sectionPosts__div__User--stack {
     margin-left: 0;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
+    font-size: var(--text2-font-weight);
+    line-height: var(--text2-line-height);
+    font-weight: var(--text2-font-weight);
     color: var(--fourth-color);
 }
 
@@ -235,18 +237,18 @@ body {
 .sectionPosts__div__content--title {
     text-align: justify;
     margin-right: 0;
-    font-size: 1.75rem;
-    line-height: 2.5rem;
+    font-size: var(--Tittle2-font-size);
+    line-height: var(--Tittle2-line-height);
     color: var(--first-color);
-    font-weight: 700 bold;
+    font-weight: var(--Tittle2-font-weight) bold;
 }
 
 .sectionPosts__div__content--text {
     color: var(--fourth-color);
     text-align: justify;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-    font-weight: 400;
+    font-size: var(--Tittle2-font-size);
+    line-height: var(--Tittle2-line-height);
+    font-weight: var(--Tittle2-font-weight);
 }
 
 .sectionPosts__userImgPost {
@@ -322,19 +324,19 @@ body {
 
 .modal__User--name {
     margin-right: 0;
-    font-size: 1.1rem;
-    line-height: 1.3rem;
+    font-size: var(--Tittle2-font-size);
+    line-height: var(--Tittle2-line-height);
+    font-weight: var(--Tittle2-font-weight) bold;
     color: var(--first-color);
-    font-weight: bold;
 }
 
 .modal__post--tittle {
     text-align: justify;
     margin-right: 0;
-    font-size: 1.75rem;
-    line-height: 2.5rem;
+    font-size: var(--Tittle1-font-size);
+    line-height: var(--Tittle1-line-height);
+    font-weight: var(--Tittle1-font-weight) bold;
     color: var(--first-color);
-    font-weight: 700 bold;
 }
 
 .modal__post--text {
@@ -358,14 +360,16 @@ body {
 
     .navbar h3 {
         margin-right: 0;
-        font-size: 1.1rem;
-        line-height: 1.3rem;
+        font-size: var(--Tittle2-font-size);
+        line-height: var(--Tittle2-line-height);
+        font-weight: var(--Tittle2-font-weight);
     }
 
     .navbar p {
         margin-left: 0;
-        font-size: 0.9rem;
-        line-height: 1.5rem;
+        font-size: var(--text1-font-weight);
+        line-height: var(--text1-line-height);
+        font-weight: var(--text1-font-weight);
     }
 
     .header {
@@ -463,16 +467,17 @@ body {
 
     .sectionPosts__div__User--name {
         margin-right: 0;
-        font-size: 1.1rem;
-        line-height: 1.3rem;
+        font-size: var(--text1-font-weight);
+        line-height: var(--text1-line-height);
+        font-weight: var(--text1-font-weight) bold;
         color: var(--first-color);
-        font-weight: bold;
     }
 
     .sectionPosts__div__User--stack {
         margin-left: 0;
-        font-size: 0.9rem;
-        line-height: 1.5rem;
+        font-size: var(--text1-font-weight);
+        line-height: var(--text1-line-height);
+        font-weight: var(--text1-font-weight); 
         color: var(--fourth-color);
     }
 
@@ -490,7 +495,9 @@ body {
     .sectionPosts__div__content--title {
         text-align: justify;
         margin-right: 0;
-        font-size: 1.5rem;
+        font-size: var(--Tittle2-font-weight);
+        line-height: var(--Tittle2-line-height);
+        font-weight: var(--Tittle2-font-weight); 
         line-height: 1.3rem;
     }
 
@@ -537,18 +544,21 @@ body {
     }
 
     .modal__User--name {
-        font-size: 1rem;
-        line-height: 1.2rem;
+        font-size: var(--Tittle2-font-weight);
+        line-height: var(--Tittle2-line-height);
+        font-weight: var(--Tittle2-font-weight); 
     }
 
     .modal__post--tittle {
-        font-size: 1.5rem;
-        line-height: 2rem;
+        font-size: var(--Tittle2-font-weight);
+        line-height: var(--Tittle2-line-height);
+        font-weight: var(--Tittle2-font-weight); 
     }
 
     .modal__post--text {
-        font-size: 0.9rem;
-        line-height: 1.2rem;
+        font-size: var(--text2-font-weight);
+        line-height: var(--text2-line-height);
+        font-weight: var(--text2-font-weight);
     }
 
 }

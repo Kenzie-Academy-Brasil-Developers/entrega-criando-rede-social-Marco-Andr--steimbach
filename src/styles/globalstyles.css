@@ -12,6 +12,29 @@
     --eighth-color: #FFFFFF;
     --brand-color-one: #4263EB;
     --brand-color-two: #364FC7;
+
     --font-family-page: 'Inter', sans-serif;
     --font-family-modal: 'Nunito', sans-serif;
+
+    /*------------------------*/
+
+    --Tittle1-font-weight: 700;
+    --Tittle1-font-size: 1.75rem;
+    --Tittle1-line-height: 2.5rem;
+
+    --Tittle2-font-weight: 600;
+    --Tittle2-font-size: 1.25rem;
+    --Tittle2-line-height: 1.5rem;
+
+    --text1-font-weight: 400;
+    --text1-font-size: 1rem;
+    --text1-line-height: 1.75rem;
+
+    --text2-font-weight: 400;
+    --text2-font-size: 0.875rem;
+    --text2-line-height: 1rem;
+
+    --text3-font-weight: 400;
+    --text3-font-size: 0.75rem;
+    --text3-line-height: 1rem;
 }
